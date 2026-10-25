@@ -1,0 +1,9 @@
+data/
+artifacts/
+experiments/
+tests/
+.git/
+.venv/
+**/__pycache__/
+*.zip
+*.npy

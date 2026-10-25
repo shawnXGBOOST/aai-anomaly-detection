@@ -1,0 +1,5 @@
+# Feature configuration. Starting values, not tuned on any test data.
+# Any later tuning uses only a held-out tail of the training series.
+windows: [10, 50]   # rolling window lengths in time steps
+min_scale: 0.05     # floor for the telemetry scale (raw units); protects flat channels
+mad_floor: 0.1      # floor for the robust spread (scaled units)

@@ -1,0 +1,15 @@
+# Fixed before any run on test data. Nothing here was tuned on labels.
+seed: 0
+fit_fraction: 0.7       # first part of each channel's train fits the model, the rest calibrates
+quantile: 0.995         # false-alarm budget for the fixed threshold and the adaptive rule
+hold: 20                # causal alarm hold, in time steps
+adaptive:
+  rule: robust
+  window: 1000
+  max_freeze: 200
+models: [robust_z, isolation_forest, autoencoder]
+thresholds: [fixed, adaptive_none, adaptive_freeze]
+sensitivity:
+  quantiles: [0.99, 0.995, 0.999]
+  holds: [0, 20, 50]
+profiling_channels: 5

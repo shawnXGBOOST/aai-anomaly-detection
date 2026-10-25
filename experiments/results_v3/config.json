@@ -1,0 +1,38 @@
+{
+  "seed": 0,
+  "fit_fraction": 0.7,
+  "quantile": 0.995,
+  "hold": 20,
+  "rule": "robust",
+  "window": 1000,
+  "max_freeze": 200,
+  "models": [
+    "robust_z",
+    "isolation_forest",
+    "autoencoder"
+  ],
+  "thresholds": [
+    "fixed",
+    "adaptive_none",
+    "adaptive_freeze"
+  ],
+  "sens_quantiles": [
+    0.99,
+    0.995,
+    0.999
+  ],
+  "sens_holds": [
+    0,
+    20,
+    50
+  ],
+  "profiling_channels": 5,
+  "drop_constant": true,
+  "min_thresholds": [
+    [
+      "robust_z",
+      3.5
+    ]
+  ],
+  "abstain_constant_train": true
+}

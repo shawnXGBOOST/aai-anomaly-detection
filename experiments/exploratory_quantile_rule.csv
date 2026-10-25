@@ -1,0 +1,13 @@
+model,rule_threshold,event_f1,event_precision,event_recall,normal_time_flagged
+robust_z,robust/fixed,0.452,0.344,0.660,0.033
+robust_z,robust/adaptive_freeze,0.281,0.176,0.699,0.128
+robust_z,quantile/adaptive_none,0.384,0.261,0.728,0.027
+robust_z,quantile/adaptive_freeze,0.305,0.186,0.845,0.127
+isolation_forest,robust/fixed,0.299,0.193,0.660,0.126
+isolation_forest,robust/adaptive_freeze,0.231,0.160,0.417,0.049
+isolation_forest,quantile/adaptive_none,0.295,0.185,0.738,0.071
+isolation_forest,quantile/adaptive_freeze,0.223,0.129,0.816,0.272
+autoencoder,robust/fixed,0.255,0.151,0.806,0.208
+autoencoder,robust/adaptive_freeze,0.198,0.118,0.612,0.116
+autoencoder,quantile/adaptive_none,0.300,0.184,0.816,0.076
+autoencoder,quantile/adaptive_freeze,0.216,0.123,0.864,0.327
